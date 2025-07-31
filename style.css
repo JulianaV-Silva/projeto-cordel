@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+:root {
+  --fontepadrao: Verdana, Geneva, Tahoma, sans-serif;
+  --fontepoema: 'Spectral', serif;
+  --cor01: #3E2F20;
+  --cor02: #FFF5E1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fontepadrao);
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  background-color: var(--cor02);
+}
+
+header {
+  background-color: var(--cor01);
+  color: var(--cor02);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-variant: small-caps;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 6vw;
+}
+
+header p {
+  padding-top: 10px;
+  font-size: 1.2em;
+}
+
+a {
+  color: var(--cor02);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 10vh 5vw;
+  line-height: 2em;
+  font-family: var(--fontepoema);
+  font-size: 2.5vw;
+}
+
+section.normal {
+  background-color: var(--cor02);
+  color: var(--cor01);
+}
+
+section.imagem {
+  color: var(--cor01);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 80px;
+}
+
+section.imagem p {
+  display: inline-block;
+  background-color: #fff5e1a4;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+section#img01 {
+  background-image: url('imagens/flor-coracao02.png');
+  background-position: right center;
+}
+
+section#img02 {
+  background-image: url('imagens/carta-mao.png');
+  background-position: center;
+}
+
+footer {
+  background-color: var(--cor01);
+  color: var(--cor02);
+  text-align: center;
+  padding: 8px;
+}
